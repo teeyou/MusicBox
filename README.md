@@ -29,3 +29,6 @@ BaseObservable 대신에 LiveData를 사용해도 됨
 안드로이드 오디오 API - SoundPool.Builder(), MediaPlayer   
 SoundPool은 짧은 오디오 재생할 때 사용   
  
+### jetpack에서 제공하는 ViewModel을 사용할 때
+- 파라미터 없을 때 : ViewModelProvider(this).get(SoundViewModel::class.java)
+- 파라미터 있을 때 : ViewModelProvider.Factory를 구현해야함
